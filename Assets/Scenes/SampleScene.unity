@@ -246,7 +246,9 @@ MonoBehaviour:
   isPunching: {fileID: 11400000, guid: 3df074169b9f6074e923736b9e237f80, type: 2}
   isDamage: {fileID: 11400000, guid: 708cb8c90caa80a4aa56056d43fc8f40, type: 2}
   isUp: {fileID: 11400000, guid: 73837c3d013136441ae9723fb2f0f2d1, type: 2}
+  notJumping: {fileID: 11400000, guid: ca09105d0ae14c34f987f97c33402125, type: 2}
   pos: {fileID: 11400000, guid: a15a90400ce14e948b08836480c63e55, type: 2}
+  p: 0
 --- !u!212 &830963688
 SpriteRenderer:
   m_ObjectHideFlags: 0

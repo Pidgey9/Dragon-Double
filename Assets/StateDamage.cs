@@ -5,6 +5,7 @@ using UnityEngine;
 public class StateDamage : StateMachineBehaviour
 {
     public Boal isDamage;
+    public Boal isJumping;
     public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         isDamage.value = true;
@@ -12,6 +13,7 @@ public class StateDamage : StateMachineBehaviour
     public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         isDamage.value = false;
+        isJumping.value = false;
     }
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     //override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)

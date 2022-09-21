@@ -6,10 +6,16 @@ public class JumpPosition : StateMachineBehaviour
 {
     public Boal isJumping;
     public Pos pos;
+    public Boal notJumping;
     public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         pos.value = animator.gameObject.transform.position;
         isJumping.value = true;
+        notJumping.value = true;
+    }
+    public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    {
+        notJumping.value = false;
     }
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     //override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
